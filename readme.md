@@ -1,5 +1,7 @@
 # dnt-repro
 
+https://github.com/denoland/dnt/issues/420
+
 Reproduction steps:
 - `cd project-one`
 - `deno run -A compile.ts`
