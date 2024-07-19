@@ -3,7 +3,7 @@ import { build, emptyDir } from "@deno/dnt";
 await emptyDir("./output");
 
 await build({
-  entryPoints: ["../project-one/mod.ts"],
+  entryPoints: ["./mod.ts"],
   outDir: "./output",
   shims: {
     deno: true
@@ -11,5 +11,5 @@ await build({
   package: {
     name: "output"
   },
-  importMap: "../project-one/deno.json"
+  importMap: "./deno.json"
 });
